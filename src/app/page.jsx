@@ -36,7 +36,7 @@ export default page
 
 const getData = async () => {
   try{
-    const res = await fetch('http://localhost:8000/api/cars', {
+    const res = await fetch('https://api-jgg9.onrender.com/api/cars', {
       cache: 'no-store'
     });
     return res.json()
