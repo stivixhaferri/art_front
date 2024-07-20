@@ -3,7 +3,7 @@ import react, { useState } from 'react'
 import axios from 'axios'
 
 
-const page = () => {
+const Page = () => {
 
 
   const [name , setName] = useState('');
@@ -80,4 +80,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
