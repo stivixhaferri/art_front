@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Subnav = () => {
   return (
-    <div className='flex justify-end py-1 gap-1 px-[3%] text-white   bg-black '>
+    <div className='flex lg:justify-end justify-center py-1 gap-1 px-[3%] text-white   bg-black '>
 
        
             <Link href={'/'} className='px-4 py-2 text-sm hover:bg-gray-400 cursor-pointer rounded-3xl hover:bg-opacity-[0.5]'>Home</Link>

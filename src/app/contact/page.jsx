@@ -25,7 +25,7 @@ const Page = () => {
     }
   }
   return(
-    <div className='min-h-[90vh] px-[5%] lg:py-[5%] pb-[5%] pt-[15%] flex lg:flex-row flex-col-reverse items-center'>
+    <div className='min-h-[90vh] px-[5%] lg:py-[5%] pb-[5%] pt-[25%] flex lg:flex-row flex-col-reverse items-center'>
       <div className='lg:w-[50%] w-full'>
         <img src="contact.svg" className='w-full' alt="" />
       </div>

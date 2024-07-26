@@ -13,7 +13,7 @@ const Mark = () => {
     const router = useRouter();
 
     const handleClick = (param) => {
-        // router.push(`/s/${param}`)
+        router.push(`/s/${param}`)
     }
 
     return(

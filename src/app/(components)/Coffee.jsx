@@ -7,7 +7,7 @@ const Coffee = () => {
         <div className='lg:w-[50%] w-full'>
             <img src="girl.svg" className='w-full' alt="" />
         </div>
-        <div className='lg:w-[50%] w-full'>
+        <div className='lg:w-[50%] w-full lg:text-start text-center'>
             <span className='bg-black px-2 py-1 text-white rounded-2xl'>
             A jeni të kënaqur me përmbajtjen tonë?
             </span>
@@ -15,7 +15,7 @@ const Coffee = () => {
             <h1 className='lg:text-[45px] pr-[5%] font-semibold pt-[5%]'>
             Klikoni per te na dhuruar një kafe për të mbështetur punën tone!
             </h1>
-            <div className="mt-8">
+            <div className="mt-8 flex lg:justify-start justify-center">
                 {/* <img
                 className="h-14 cursor-pointer"
                 src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"

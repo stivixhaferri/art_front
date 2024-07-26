@@ -5,6 +5,8 @@ import ResSearch from './(components)/ResSearch'
 import Hero from './(components)/Hero'
 import { Adder } from './(components)/Adder'
 import Coffee from './(components)/Coffee'
+import Silver from './(components)/Silver'
+import Card from './(components)/Card'
 
 
 const page = async () => {
@@ -25,8 +27,44 @@ const page = async () => {
       <div id='cars'>
       <Grid  cars={cars} />
       </div>
-      
-      <Adder/>
+      <Silver/>
+
+
+      <div className='lg:py-5 py-1 bg-black'>
+        <img src="/mb.png" className='lg:w-[90%] w-full mx-auto lg:h-[500px] lg:object-cover object-contain ' alt="" />
+      </div>
+
+      <div className='flex lg:flex-row flex-col items-center lg:mt-0 mt-[-1%] py-[5%] px-[5%] bg-black'>
+        <div className='lg:w-[30%] w-full'>
+          <img src="/iphone.png" className='lg:w-[85%] w-[85%] mx-auto' alt="" />
+        </div>
+        <div className='lg:w-[70%] w-full  bg-black lg:py-0 py-5'>
+          <h2 className='text-white text-3xl font-semibold'>Our Top Cars</h2>
+          <div className='grid lg:grid-cols-3 grid-cols-1 gap-3'>
+          {cars && cars.slice(0, 6).map((el, index) => (
+        <Card
+          key={index}
+          title={el?.title}
+          make={el?.make}
+          model={el?.model}
+          year={el?.year}
+          city={el?.city}
+          transmission={el?.transmission}
+          fuel={el?.fuel}
+          rate={el?.rate}
+          cover={el?.cover}
+          id={el._id}
+          link={`/details/${el._id}`}
+        />
+      ))}
+          </div>
+        
+        </div>
+      </div>
+
+
+    
+      {/* <Adder/> */}
       <Coffee/>
     </div>
   )
@@ -37,7 +75,7 @@ export default page
 
 const getData = async () => {
   try{
-    const res = await fetch('https://api-jgg9.onrender.com/api/cars', {
+    const res = await fetch('http://localhost:8000/api/cars', {
       cache: 'no-store'
     });
     return res.json()

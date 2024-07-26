@@ -46,7 +46,7 @@ const Detail = async ({params}) => {
         return <div>No car data available</div>;
     }
   return (
-    <div className='px-[10%] lg:py-5 pt-[15%] pb-[5%]'>
+    <div className='px-[5%] lg:px-[10%] lg:py-5 pt-[20%] pb-[5%]'>
         <div className='flex items-center'>
             <div className='flex w-[50%] items-center' >
                 <h1 className='font-bold text-2xl'>{car && car.title}</h1>
@@ -273,6 +273,11 @@ const Detail = async ({params}) => {
                 </div>
             </div>
             <div className='lg:w-[30%] w-full'>
+                <div className='w-full p-2 border-[0.5px] rounded text-start bg-white text-sm'>
+                    <b>Attention</b> You need to pay <b>10%</b> of the price to book the car.
+                    <hr className='my-2' />
+                    <b>Kujdes</b> Duhet të paguani <b>10%</b> të çmimit për të rezervuar makinën.
+                </div>
                 {car && car.disable == 'false' ? <Book   id={car._id}  />   : <div className='w-full p-2 border-[0.5px] rounded text-center bg-gray-200 text-lg'>This car can not be booked for a period of time</div>}
                 
                 <div className='flex items-center py-3 underline justify-center gap-3'>

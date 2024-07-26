@@ -81,7 +81,7 @@ const PostForm = ({ token }) => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className='lg:px-[10%] px-[5%] justify-center lg:pt-[0%] pt-[15%]  gap-5  min-h-[90vh]'>
+        <form onSubmit={handleSubmit} className='lg:px-[10%] px-[5%] justify-center lg:pt-[0%] pt-[20%]  gap-5  min-h-[90vh]'>
             <div className=''>
                 <span className='text-[12px] bg-black text-white px-2 py-1 rounded-2xl'>ART</span>
                 <h2 className='text-[40px]  font-bold'>POST YOUR CAR</h2>

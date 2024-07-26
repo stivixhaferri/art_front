@@ -188,7 +188,7 @@ const Book = ({ id }) => {
               </div>
             </AlertDialogTrigger>
             {isDateRangeValid && (
-              <AlertDialogContent className="w-[30%]">
+              <AlertDialogContent className="lg:w-[30%] w-[90%] max-h-[80%]  overflow-y-auto">
                 <AlertDialogHeader>
                   <AlertDialogTitle>Pay For Reservation</AlertDialogTitle>
                   <AlertDialogDescription>

@@ -33,7 +33,7 @@ const Comments = ({ id }) => {
 
   const getComments = async () => {
     try {
-      const res = await axios.get('https://api-jgg9.onrender.com/api/comments', {
+      const res = await axios.get('http://localhost:8000/api/comments', {
         headers: {
           'token': id
         }

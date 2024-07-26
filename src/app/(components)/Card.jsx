@@ -6,8 +6,8 @@ import Link from 'next/link';
 const Card = ({title, make , model , year , city , transmission, fuel , rate , cover , id , link}) => {
   
   return (
-    <div className="relative mx-auto w-full  lg:max-w-sm pt-6 ">
-  <Link href={`${link}`} className="relative inline-block w-full transform shadow-lg  transition-transform duration-300 ease-in-out border-[0.5px] overflow-hidden rounded-lg" >
+    <div className="relative mx-auto w-full  lg:max-w-sm pt-6  ">
+  <Link href={`${link}`} className="relative bg-white inline-block w-full transform shadow-lg  transition-transform duration-300 ease-in-out border-[0px] overflow-hidden rounded-lg" >
     <div className="rounded-lg">
       <div className="relative flex h-52 justify-center overflow-hidden rounded-lg ">
         <div className="w-full transform transition-transform duration-500 ease-in-out hover:scale-110">
@@ -16,7 +16,7 @@ const Card = ({title, make , model , year , city , transmission, fuel , rate , c
         <div className="absolute bottom-0 mb-3 flex justify-center">
          
         </div>
-        <span className="absolute left-0 top-0 z-10 ml-3 mt-3 inline-flex select-none rounded-lg bg-red-500 px-3 py-2 text-sm font-medium text-white"> Featured </span>
+        <span className="absolute left-0 top-0 z-10 ml-3 mt-3 inline-flex select-none rounded-lg bg-red-500 px-3 py-2 text-sm font-medium text-white"> ART </span>
       </div>
       <div className="px-2">
         <div className="mt-1 grid grid-cols-2">

@@ -13,7 +13,7 @@ const ResSearch = () => {
 
 
     const handleSubmit = () => {
-        router.push(`/s/${city.toLowerCase()}_${transmission}_${price}`)
+        router.push(`/s/${city ? city.toLowerCase() : 'n' }_${transmission ? transmission : 'n' }_${price ? price : 'n'}`)
     }
     return(
         <div className='lg:hidden mt-[5%] w-[95%] gap-1 mx-auto flex-col rounded-lg border-[0.5px] p-2 bg-white items-center pt-3'>

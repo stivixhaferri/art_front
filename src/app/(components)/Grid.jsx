@@ -3,7 +3,7 @@ import Card from './Card'
 
 const Grid = ({cars}) => {
   return (
-    <div className='px-[5%] grid lg:grid-cols-5 grid-cols-1 gap-1 lg;py-5 py-[10%]'>
+    <div className='px-[5%] grid lg:grid-cols-4 grid-cols-1 gap-1 lg;py-5 py-[10%]'>
       {cars ? (<>
       
         {cars.slice().reverse().map((el, index) => {

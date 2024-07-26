@@ -11,9 +11,9 @@ const Search = () => {
   const [price , setPrice] = useState();
 
   const handleSearch = () => {
-    if(location != '' && transmission != '' && price != ""){
-      router.push(`/s/${location.toLowerCase()}_${transmission}_${price}`)
-    }
+   
+      router.push(`/s/${location ? location.toLowerCase() : 'n' }_${transmission ? transmission : 'n' }_${price ? price : 'n'}`)
+    
   }
 
 
@@ -22,7 +22,35 @@ const Search = () => {
     <div className="bar">
   <div className="location">
     <p>City</p>
-    <input type="text" onChange={(e) => setLocation(e.target.value)} className='txt' placeholder="Enter the City" />
+    <select onChange={(e) => setLocation(e.target.value)} className='txt '  id="">
+      <option value="">Select</option>
+      <option value="tirane">Tirane</option>
+                        <option value="durres">Durres</option>
+                        <option value="vlore">Vlore</option>
+                        <option value="shkoder">Shkoder</option>
+                        <option value="Fier">Fier</option>
+                        <option value="Korçe">Korçe</option>
+                        <option value="Elbasan">Elbasan</option>
+                        <option value="Berat">Berat</option>
+                        <option value="Lushnje">Lushnje</option>
+                        <option value="Pogradec">Pogradec</option>
+                        <option value="Kukes">Kukes</option>
+                        <option value="Lezhe">Lezhe</option>
+                        <option value="Gjirokaster">Gjirokaster</option>
+                        <option value="Sarande">Sarande</option>
+                        <option value="Peshkopi">Peshkopi</option>
+                        <option value="Bajram Curri">Bajram Curri</option>
+                        <option value="Librazhd">Librazhd</option>
+                        <option value="Tepelene">Tepelene</option>
+                        <option value="Peqin">Peqin</option>
+                        <option value="Gramsh">Gramsh</option>
+                        <option value="Burrel">Burrel</option>
+                        <option value="Poliçan">Poliçan</option>
+                        <option value="Permet">Permet</option>
+                        <option value="Sarande">Sarande</option>
+                        <option value="Vore">Vore</option>
+                        <option value="Kamez">Kamez</option>
+    </select>
   </div>
   <div className="check-in">
     <p>Transmission</p>
@@ -35,7 +63,7 @@ const Search = () => {
   
   <div className="guests">
     <p>Price</p>
-    <input type="number" onChange={(e) => setPrice(e.target.value)} className='txt' placeholder="Max Price per Day" />
+    <input type="number" onChange={(e) => setPrice(e.target.value)} className='txt' placeholder="Max Price " />
    
   </div>
 
