@@ -20,7 +20,7 @@ const Nav = ({token}) => {
 
     const getData = async () => {
         try{
-            const res = await axios.get('http://localhost:8000/api/getuser', {
+            const res = await axios.get('https://server.albaniarentaltourism.com/api/getuser', {
             
                 headers: {
                   'Content-Type': 'application/json',
@@ -48,7 +48,7 @@ const Nav = ({token}) => {
     const logout = async () => {
       try {
           // Make a request to your backend to clear any server-side session or token
-          const res = await axios.post('http://localhost:8000/api/logout', {}, {
+          const res = await axios.post('https://server.albaniarentaltourism.com/api/logout', {}, {
               withCredentials: true,  // Pass withCredentials in the config object
           });
   
