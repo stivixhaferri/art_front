@@ -39,14 +39,14 @@ const Detail = async ({params}) => {
     const randomCars = randoms && randoms.data ? randoms.data : null;
 
 
-    console.log(randoms.cars);
+   
 
     
     if (!car) {
         return <div>No car data available</div>;
     }
   return (
-    <div className='px-[5%] lg:px-[10%] lg:py-5 pt-[20%] pb-[5%]'>
+    <div className='px-[5%] lg:px-[10%] lg:py-5 pt-[25%] pb-[5%]'>
         <div className='flex items-center'>
             <div className='flex w-[50%] items-center' >
                 <h1 className='font-bold text-2xl'>{car && car.title}</h1>
@@ -61,8 +61,8 @@ const Detail = async ({params}) => {
         </div>
 
 
-        <div className='flex   lg:flex-row flex-col gap-3 items-center lg:h-[50vh] py-2 lg:py-0 lg:rounded-2xl overflow-hidden'>
-            <div className='lg:w-[50%] w-full'>
+        <div className='flex   lg:flex-col flex-col gap-3 items-center lg:h-[50vh] py-2 lg:py-0 lg:rounded-2xl overflow-hidden'>
+            <div className=' w-full'>
             <AlertDialog>
             <AlertDialogTrigger className='w-full'> 
             <img  src={`${car && car.cover}`} className='w-full  h-full object-cover cursor-pointer' alt="" />
@@ -82,7 +82,7 @@ const Detail = async ({params}) => {
             </AlertDialog>
                
             </div>
-            <div className='lg:w-[50%] w-full gap-3 py-2 grid grid-cols-2 grid-rows-2'>
+            <div className='w-full gap-3 py-2 grid grid-cols-1  grid-rows-1'>
 
 
             <AlertDialog>

@@ -5,9 +5,14 @@ import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation'
+import Cookies from 'js-cookie';
 
 export default function LoginForm() {
   const router = useRouter()
+
+  const setCookieWithJS = (name, value, days) => {
+    Cookies.set('jwt', res.data.token, { expires: 1 });
+  };
  
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -29,7 +34,8 @@ export default function LoginForm() {
        
       });
       if (res.status === 200) {
-        console.log(res.data.token)
+        setCookieWithJS('jwt', res.data.token , 1)
+      
         router.push('/')
       }
     } catch (error) {
