@@ -33,7 +33,7 @@ export default function LoginForm() {
       });
       if (res.status === 200) {
         let token = res.data.token
-        setCookie("jwt", token, { req, res, maxAge: 60 * 6 * 24 });
+        setCookie("jwt", token, { maxAge: 60 * 6 * 24 });
       
         router.push('/')
       }
