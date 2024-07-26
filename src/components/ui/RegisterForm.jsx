@@ -24,7 +24,7 @@ export default function RegisterForm() {
 
 
     try {
-      const res = await axios.post('http://localhost:8000/api/register', formData, {
+      const res = await axios.post('https://server.albaniarentaltourism.com/api/register', formData, {
         withCredentials: true, 
      
       });

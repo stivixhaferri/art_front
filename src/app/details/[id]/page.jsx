@@ -298,7 +298,7 @@ export default Detail
 
 const getData = async (id) => {
     try {
-        const res = await fetch('https://api-jgg9.onrender.com/api/mycar', {
+        const res = await fetch('https://server.albaniarentaltourism.com/api/mycar', {
             headers: {
                 'token': id
             },
@@ -318,7 +318,7 @@ const getData = async (id) => {
 
 const getRandomCars = async () => {
     try{
-        const res = await fetch('https://api-jgg9.onrender.com/api/random', {
+        const res = await fetch('https://server.albaniarentaltourism.com/api/random', {
             cache: 'no-store'
         });
 

@@ -256,7 +256,7 @@ export default Page
 
 const getData = async (id) => {
     try {
-        const res = await fetch('https://api-jgg9.onrender.com/api/mycar', {
+        const res = await fetch('https://server.albaniarentaltourism.com/api/mycar', {
             headers: {
                 'token': id
             },

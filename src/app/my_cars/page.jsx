@@ -39,7 +39,7 @@ export default page
 
 const getData = async (token) => {
   try{
-    const res = await fetch('https://api-jgg9.onrender.com/api/mycars', {
+    const res = await fetch('https://server.albaniarentaltourism.com/api/mycars', {
       headers: {
         'token': token
       },

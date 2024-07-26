@@ -24,7 +24,7 @@ export default function LoginForm() {
 
 
     try {
-      const res = await axios.post('http://localhost:8000/api/login', {email , password}, {
+      const res = await axios.post('https://server.albaniarentaltourism.com/api/login', {email , password}, {
         withCredentials: true, 
        
       });

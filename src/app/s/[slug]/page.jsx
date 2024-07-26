@@ -75,7 +75,7 @@ export default Page;
 
 const getData = async () => {
   try {
-    const res = await fetch('http://localhost:8000/api/cars', {
+    const res = await fetch('https://server.albaniarentaltourism.com/api/cars', {
       cache: 'no-store'
     });
 

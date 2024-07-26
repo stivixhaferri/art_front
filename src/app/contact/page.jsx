@@ -14,7 +14,7 @@ const Page = () => {
 
   const handleSubmit = async () => {
     try{
-      const res = await axios.post('https://api-jgg9.onrender.com/api/contact', {name , email , number , message}, {
+      const res = await axios.post('https://server.albaniarentaltourism.com/api/contact', {name , email , number , message}, {
         cache: 'no-store'
       });
       if(res.status == 200){
