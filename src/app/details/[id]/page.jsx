@@ -82,7 +82,7 @@ const Detail = async ({params}) => {
             </AlertDialog>
                
             </div>
-            <div className='w-full gap-3 py-2 grid grid-cols-1  grid-rows-1'>
+            <div className='w-full gap-3 py-2 grid grid-cols-4  grid-rows-1'>
 
 
             <AlertDialog>
