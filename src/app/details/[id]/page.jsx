@@ -61,8 +61,8 @@ const Detail = async ({params}) => {
         </div>
 
 
-        <div className='flex   lg:flex-col flex-col gap-3 items-center lg:h-[50vh] py-2 lg:py-0 lg:rounded-2xl overflow-hidden'>
-            <div className=' w-full'>
+        <div className='flex   lg:flex-col flex-col gap-3 items-center  lg:py-2 py-[2] lg:py-0 lg:rounded-2xl overflow-hidden'>
+            <div className='w-full'>
             <AlertDialog>
             <AlertDialogTrigger className='w-full'> 
             <img  src={`${car && car.cover}`} className='w-full  h-full object-cover cursor-pointer' alt="" />
