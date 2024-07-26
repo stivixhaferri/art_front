@@ -15,6 +15,10 @@ const page = async () => {
   
   return (
     <div className='bg-[#F7F7F7]'>
+      <div className="bg-black flex items-center w-full h-screen fixed top-0 left-0 right-0 bottom-0 ">
+        <h2 className='text-2xl font-semibold w-full text-center'>Albanian Rental Tourims</h2>
+        <p className='text-white w-full text-center'>Comming Soon</p>
+      </div>
       <br />
       <Mark/>
       
