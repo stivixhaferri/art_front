@@ -29,6 +29,7 @@ export default function LoginForm() {
        
       });
       if (res.status === 200) {
+        console.log(res.data.token)
         router.push('/')
       }
     } catch (error) {
