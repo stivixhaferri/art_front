@@ -273,7 +273,7 @@ const Detail = async ({params}) => {
                 </div>
             </div>
             <div className='lg:w-[30%] w-full'>
-                <div className='w-full p-2 border-[0.5px] rounded text-start bg-white text-sm'>
+                <div className='w-full p-2 border-[0.5px] lg:my-1 my-5 rounded text-start bg-white text-sm'>
                     <b>Attention</b> You need to pay <b>10%</b> of the price to book the car.
                     <hr className='my-2' />
                     <b>Kujdes</b> Duhet të paguani <b>10%</b> të çmimit për të rezervuar makinën.

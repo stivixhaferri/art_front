@@ -6,13 +6,11 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation'
 import Cookies from 'js-cookie';
+import { setCookie } from "cookies-next";
 
 export default function LoginForm() {
   const router = useRouter()
 
-  const setCookieWithJS = (name, value, days) => {
-    Cookies.set('jwt', res.data.token, { expires: 1 });
-  };
  
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -35,7 +33,7 @@ export default function LoginForm() {
       });
       if (res.status === 200) {
         let token = res.data.token
-        setCookieWithJS('jwt', `${token}` , 1)
+        setCookie("jwt", token, { req, res, maxAge: 60 * 6 * 24 });
       
         router.push('/')
       }
