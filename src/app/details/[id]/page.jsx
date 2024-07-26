@@ -135,7 +135,7 @@ const Detail = async ({params}) => {
                 <AlertDialogHeader>
 
                 <AlertDialogDescription>
-                <img  src={`${car && car.images[2]}`} className='object-contain mx-auto h-[70vh] cursor-pointer' alt="" />
+                <img  src={`${car && car.images[2]}`} className='object-contain mx-auto h-[70vh] cursor-pointer'   alt="" />
                 </AlertDialogDescription>
                 </AlertDialogHeader>
                 <AlertDialogFooter>

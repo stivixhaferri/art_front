@@ -34,7 +34,8 @@ export default function LoginForm() {
        
       });
       if (res.status === 200) {
-        setCookieWithJS('jwt', res.data.token , 1)
+        let token = res.data.token
+        setCookieWithJS('jwt', `${token}` , 1)
       
         router.push('/')
       }
