@@ -58,7 +58,7 @@ const PostForm = ({ token }) => {
         });
 
         try {
-            const response = await axios.post('https://server.albaniarentaltourism.com/api/post', formData, {
+            const response = await axios.post('/api/car', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                     'token': token
