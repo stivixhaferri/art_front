@@ -3,12 +3,14 @@ import formidable from 'formidable';
 import { Storage } from '@google-cloud/storage';
 import CarModel from '@/models/Car';
 import connect from '@/lib/db';
+import path from 'path';
+import fs from 'fs';
 
 const storage = new Storage({
-  projectId: 'ascendant-woods-416715',
-  keyFilename: 'ascendant-woods-416715-ae7067a93ed5.json', 
+  projectId: process.env.GOOGLE_CLOUD_PROJECT_ID,
+  keyFilename: path.resolve(__dirname, '..', process.env.GOOGLE_CLOUD_KEY_FILENAME), 
 });
-const bucket = storage.bucket('artstorage12'); 
+const bucket = storage.bucket(process.env.GOOGLE_CLOUD_BUCKET_NAME); 
 
 export async function POST(req) {
     await connect();
