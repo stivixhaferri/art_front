@@ -34,3 +34,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+/.env
+/ascendant-woods-416715-ae7067a93ed5
