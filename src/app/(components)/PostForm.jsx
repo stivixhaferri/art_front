@@ -185,7 +185,7 @@ const PostForm = ({ token }) => {
                     <textarea onChange={(e) => setDescription(e.target.value)} placeholder='Description' className='px-4 py-2 border-[0.5px] rounded-lg lg:w-[60%] w-full mt-2' />
                 </div>
                 <div className='py-2 flex flex-col'>
-                    <button disabled={isDisabled} type="submit" className='lg:w-[60%] w-full bg-red-600 px-4 py-3 text-white rounded-lg'>SUBMIT</button>
+                    <button  type="submit" className='lg:w-[60%] w-full bg-red-600 px-4 py-3 text-white rounded-lg'>SUBMIT</button>
                 </div>
                
             </div>
