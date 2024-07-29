@@ -22,7 +22,7 @@ const Change = ({slug , rate}) => {
 
   const handleOtherSubmit = async () => {
     try{
-      const res = await axios.get('https://api-jgg9.onrender.com/api/disable' , {
+      const res = await axios.get('https://server.albaniarentaltourism.com/api/disable' , {
         headers: {
           'token': slug
         },
@@ -37,7 +37,7 @@ const Change = ({slug , rate}) => {
 
   const handleEnable = async () => {
     try{
-      const res = await axios.get('https://api-jgg9.onrender.com/api/enable' , {
+      const res = await axios.get('https://server.albaniarentaltourism.com/api/enable' , {
         headers: {
           'token': slug
         },
@@ -53,7 +53,7 @@ const Change = ({slug , rate}) => {
     
 
     try{
-      const res = await axios.post('https://api-jgg9.onrender.com/api/reserve' ,{id: slug , date:date});
+      const res = await axios.post('https://server.albaniarentaltourism.com/api/reserve' ,{id: slug , date:date});
       console.log(res.data);
       if(res.status == 200){
         window.location.realod();
