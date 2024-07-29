@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
         <div className="pt-[8%] bg-[#F7F7F7]  min-h-[90vh]">{children}</div>
         <Bottom/>
         <Toaster />
-        <script src="https://www.paypal.com/sdk/js?client-id=AaT9W1iE78LeoVCAh9Y2bbWrV7EdF-xFuiQHRNlC1aXRnIIa820mn8ktIu3dS97a45TmLaYhVky34eyM" async></script>
+        <script src="https://www.paypal.com/sdk/js?client-id=AchuOV30gNHLQkujzb-kDzm7ieI2gZMvXSEoYvhYSrOb1jxeLsfAi6d9y302YiJBNvpOmBUEBvRsr4j_" async></script>
         </body>
     </html>
   );
