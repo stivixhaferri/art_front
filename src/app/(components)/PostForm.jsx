@@ -27,6 +27,8 @@ const PostForm = ({ token }) => {
     const [location, setLocation] = useState('');
     const [description, setDescription] = useState('');
 
+    const [isDisabled, setIsDisabled] = useState(true);
+
     const handleFileChange = (e) => {
         if (e.target.name === 'cover') {
             setCover(e.target.files[0]);
@@ -36,6 +38,7 @@ const PostForm = ({ token }) => {
     };
 
     const handleSubmit = async (e) => {
+        setIsDisabled(!isDisabled)
         e.preventDefault();
         const formData = new FormData();
         formData.append('title', title);
@@ -174,14 +177,15 @@ const PostForm = ({ token }) => {
                 </div>
                 <div className='py-2 flex flex-col'>
                     <label htmlFor="location" className='font-semibold'>Location</label>
-                    <input type="text" onChange={(e) => setLocation(e.target.value)} placeholder='Location' className='px-4 py-2 border-[0.5px] rounded-lg lg:w-[60%] w-full mt-2' />
+                    <input type="text" onChange={(e) => setLocation(e.target.value)} placeholder='
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d95868.21548167105!2d19.817823!3d41.33318500000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350310470fac5db%3A0x40092af10653720!2sTirana%2C%20Albania!5e0!3m2!1sen!2sus!4v1722237189908!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>' className='px-4 py-2 border-[0.5px] rounded-lg lg:w-[60%] w-full mt-2' />
                 </div>
                 <div className='py-2 flex flex-col'>
                     <label htmlFor="description" className='font-semibold'>Description</label>
                     <textarea onChange={(e) => setDescription(e.target.value)} placeholder='Description' className='px-4 py-2 border-[0.5px] rounded-lg lg:w-[60%] w-full mt-2' />
                 </div>
                 <div className='py-2 flex flex-col'>
-                    <button type="submit" className='lg:w-[60%] w-full bg-red-600 px-4 py-3 text-white rounded-lg'>SUBMIT</button>
+                    <button disabled={isDisabled} type="submit" className='lg:w-[60%] w-full bg-red-600 px-4 py-3 text-white rounded-lg'>SUBMIT</button>
                 </div>
                
             </div>
