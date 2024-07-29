@@ -16,15 +16,13 @@ export const metadata = {
   og: {
     title: "Albanian Rental Tourism",
     description: "Një platformë inovative për qira makinash në Shqipëri. Rezervoni dhe paguani lehtësisht për makinat që përshtaten me nevojat tuaja dhe shijoni udhëtime të paharrueshme.",
-    image: "https://yourwebsite.com/path-to-your-image.jpg",
-    url: "https://yourwebsite.com",
     site_name: "Albanian Rental Tourism"
   },
   twitter: {
     card: "summary_large_image",
     title: "Albanian Rental Tourism",
     description: "Një platformë inovative për qira makinash në Shqipëri. Rezervoni dhe paguani lehtësisht për makinat që përshtaten me nevojat tuaja dhe shijoni udhëtime të paharrueshme.",
-    image: "https://yourwebsite.com/path-to-your-image.jpg"
+    
   },
   favicon: "/logo.png" // Make sure to replace this with the actual path to your favicon file
 };
