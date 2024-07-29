@@ -87,7 +87,7 @@ const Detail = async ({params}) => {
 
             <AlertDialog>
             <AlertDialogTrigger>
-            <img  src={`${car && car.images[0]}`} className='lg:w-full object-cover lg:h-full cursor-pointer' alt="" />
+            <img  src={`${car && car.images[0]}`} className='lg:w-full object-contain mx-auto lg:h-full cursor-pointer' alt="" />
             </AlertDialogTrigger>
             <AlertDialogContent className="lg:w-[80%] mx-auto" >
                 <AlertDialogHeader>
