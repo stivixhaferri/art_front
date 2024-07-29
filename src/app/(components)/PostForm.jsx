@@ -68,7 +68,7 @@ const PostForm = ({ token }) => {
                 }
             });
             
-            if(response.data.status == 700){
+            if(response.data.status !== 200){
              
                 toast({
                     title: "Your Account is not yet verified",
