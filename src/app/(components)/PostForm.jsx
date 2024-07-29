@@ -71,8 +71,8 @@ const PostForm = ({ token }) => {
             if(response.data.status !== 200){
              
                 toast({
-                    title: "Your Account is not yet verified",
-                    description: "Wait for your account to verify to post Cars in ART website",
+                    title: "Profili juaj ende nuk eshte verifikuar",
+                    description: "Prisini per verifikimin e profilit tuaj, ne menyre qe te postoni makinat tuaja.Mesazhi i verifimikimit te profilit do tiu dergohet ne adresen tuaj te emailit",
                   })
             }else if(response.data.message == "Car created successfully."){
                 router.push('/')
