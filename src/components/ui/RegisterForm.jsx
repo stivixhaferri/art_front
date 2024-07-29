@@ -5,6 +5,7 @@ import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation'
+import { setCookie } from "cookies-next";
 
 export default function RegisterForm() {
   const router = useRouter()
@@ -29,6 +30,8 @@ export default function RegisterForm() {
      
       });
       if (res.status === 200) {
+        let token = res.data.token
+        setCookie("jwt", token, { maxAge: 60 * 6 * 24 });
         router.push('/')
       }
     } catch (error) {
