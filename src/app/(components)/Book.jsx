@@ -53,7 +53,7 @@ const Book = ({ id }) => {
   const handlePaymentSuccess = async (order) => {
     try {
      
-      const res = await axios.post('http://localhost:8000/api/book',  {email , phone , startDate , endDate , message , car_id: id  , total} );
+      const res = await axios.post('https://server.albaniarentaltourism.com/api/book',  {email , phone , startDate , endDate , message , car_id: id  , total} );
 
       
       if(res.status == 200){
@@ -192,7 +192,7 @@ const Book = ({ id }) => {
                 <AlertDialogHeader>
                   <AlertDialogTitle>Pay For Reservation</AlertDialogTitle>
                   <AlertDialogDescription>
-                    <PayPalButton onSuccess={handlePaymentSuccess} />
+                    <PayPalButton total={total} onSuccess={handlePaymentSuccess} />
                   </AlertDialogDescription>
                 </AlertDialogHeader>
                 <AlertDialogFooter>
