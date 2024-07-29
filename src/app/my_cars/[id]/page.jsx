@@ -40,7 +40,7 @@ const Page = async ({params}) => {
         return <div>No car data available</div>;
     }
   return (
-    <div className='px-[10%] lg:py-5 pt-[20%] pb-[5%]'>
+    <div className='px-[10%] lg:py-5 pt-[25%] pb-[5%]'>
         <div className='flex items-center'>
             <div className='flex w-[50%] items-center' >
                 <h1 className='font-bold text-2xl'>{car && car.title}</h1>

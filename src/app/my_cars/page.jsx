@@ -12,7 +12,7 @@ const page = async () => {
   console.log(data.myCars);
   const cars = data ? data.myCars : []
   return (
-    <div className='px-[5%] min-h-[90vh] grid lg:grid-cols-5 grid-cols-1 lg:pt-[0%] pt-[15%] gap-1 py-5'>
+    <div className='px-[5%] min-h-[90vh] grid lg:grid-cols-5 grid-cols-1 lg:pt-[0%] pt-[20%] gap-1 py-5'>
         {cars && cars.map((el , index) => {
           return <Card  key={index} title={el && el.title}
           make={el && el.make}
