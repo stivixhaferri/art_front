@@ -31,7 +31,7 @@ const Book = ({ id }) => {
 
   
     try {
-      const res = await axios.get('https://api-jgg9.onrender.com/api/mycar', {
+      const res = await axios.get('https://server.albaniarentaltourism.com/api/mycar', {
         headers: {
           'token': id
         },
