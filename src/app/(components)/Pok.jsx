@@ -18,7 +18,7 @@ const Pok = () => {
     if (isFormSubmitted && window.PokPayment) {
       window.PokPayment.renderForm(
         'payment-form-container',
-        'SDK_ORDER_ID',
+        'SX41608',
         () => { console.log('Payment Successful'); },
         () => { console.log('Payment Failed'); },
         {
