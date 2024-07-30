@@ -44,6 +44,7 @@ export default function RootLayout({ children }) {
         <Bottom/>
         <Toaster />
         <script src="https://www.paypal.com/sdk/js?client-id=Af5oAH4IGvBf74g0OZxQjIu03shlNAehWefT7bcnzSKLbI2C51-808rOsjy71-Dspj4yNJwjOLG7eI6u" async></script>
+        <script src="https://static.pokpay.io/public/dist/pokpayments/pok-payment.js" async></script>
         </body>
     </html>
   );
