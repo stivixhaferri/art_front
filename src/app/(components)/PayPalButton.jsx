@@ -11,7 +11,7 @@ const PayPalButton = ({ onSuccess, total}) => {
           return actions.order.create({
             purchase_units: [{
               amount: {
-                value: `${total * 0.10 }` 
+                value: `0.2` 
               }
             }]
           });

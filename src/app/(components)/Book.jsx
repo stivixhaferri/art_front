@@ -194,8 +194,8 @@ const Book = ({ id }) => {
                 <AlertDialogHeader>
                   <AlertDialogTitle>Pay For Reservation</AlertDialogTitle>
                   <AlertDialogDescription>
-                    {/* <PayPalButton total={total} onSuccess={handlePaymentSuccess} /> */}
-                    <Pok/>
+                    <PayPalButton total={total} onSuccess={handlePaymentSuccess} />
+                    {/* <Pok/> */}
                   </AlertDialogDescription>
                 </AlertDialogHeader>
                 <AlertDialogFooter>
