@@ -181,6 +181,7 @@ const Book = ({ id }) => {
             ))}
           </ul>
         </div>
+       
         <div className="flex items-center justify-center mb-4">
           <AlertDialog>
             <AlertDialogTrigger disabled={!isDateRangeValid}>
@@ -193,7 +194,8 @@ const Book = ({ id }) => {
                 <AlertDialogHeader>
                   <AlertDialogTitle>Pay For Reservation</AlertDialogTitle>
                   <AlertDialogDescription>
-                    <PayPalButton total={total} onSuccess={handlePaymentSuccess} />
+                    {/* <PayPalButton total={total} onSuccess={handlePaymentSuccess} /> */}
+                    <Pok/>
                   </AlertDialogDescription>
                 </AlertDialogHeader>
                 <AlertDialogFooter>
@@ -203,7 +205,7 @@ const Book = ({ id }) => {
             )}
           </AlertDialog>
         </div>
-        <Pok/>
+       
       </form>
     </div>
   );
