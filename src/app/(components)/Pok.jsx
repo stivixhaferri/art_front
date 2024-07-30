@@ -70,7 +70,7 @@ const Pok = () => {
         </label>
         <br />
         <label>
-          Holder's Name:
+          Holder Name:
           <input
             type="text"
             name="holdersName"
