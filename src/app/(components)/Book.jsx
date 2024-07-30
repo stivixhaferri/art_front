@@ -14,6 +14,7 @@ import {
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
 import PayPalButton from './PayPalButton';
+import Pok from './Pok';
 
 const Book = ({ id }) => {
   const [car, setCar] = useState();
@@ -202,6 +203,7 @@ const Book = ({ id }) => {
             )}
           </AlertDialog>
         </div>
+        <Pok/>
       </form>
     </div>
   );
