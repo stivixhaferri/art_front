@@ -1,53 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Home Page -->
-  <url>
-    <loc>https://albaniarentaltourism.com/</loc>
-    <lastmod>2024-07-30T00:00:00Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  
-  <!-- About Page -->
-  <url>
-    <loc>https://albaniarentaltourism.com/about</loc>
-    <lastmod>2024-07-30T00:00:00Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Blog Page -->
-  <url>
-    <loc>https://albaniarentaltourism.com/blog</loc>
-    <lastmod>2024-07-30T00:00:00Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <!-- Contact Page -->
-  <url>
-    <loc>https://albaniarentaltourism.com/contact</loc>
-    <lastmod>2024-07-30T00:00:00Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <!-- Services Page -->
-  <url>
-    <loc>https://albaniarentaltourism.com/services</loc>
-    <lastmod>2024-07-30T00:00:00Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <!-- Add additional pages as needed -->
-  
-  <!-- Example Dynamic Page -->
-  <!-- If you have dynamic pages, list them here -->
-  <url>
-    <loc>https://albaniarentaltourism.com/cars</loc>
-    <lastmod>2024-07-30T00:00:00Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://albaniarentaltourism.com/</loc>
+  <lastmod>2024-08-01T07:44:24+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://albaniarentaltourism.com/about</loc>
+  <lastmod>2024-08-01T07:44:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://albaniarentaltourism.com/contact</loc>
+  <lastmod>2024-08-01T07:44:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://albaniarentaltourism.com/terms</loc>
+  <lastmod>2024-08-01T07:44:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://albaniarentaltourism.com/s/all</loc>
+  <lastmod>2024-08-01T07:44:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://albaniarentaltourism.com/details/66a74e9ea7fca084925617a0</loc>
+  <lastmod>2024-08-01T07:44:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://albaniarentaltourism.com/details/66a74de3e92786f6d84d19ee</loc>
+  <lastmod>2024-08-01T07:44:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://albaniarentaltourism.com/details/66a74d326da9453f827d2422</loc>
+  <lastmod>2024-08-01T07:44:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://albaniarentaltourism.com/details/66a74c736da9453f827d2413</loc>
+  <lastmod>2024-08-01T07:44:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://albaniarentaltourism.com/details/66a74bcc6da9453f827d2402</loc>
+  <lastmod>2024-08-01T07:44:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://albaniarentaltourism.com/details/66a74b416da9453f827d23fa</loc>
+  <lastmod>2024-08-01T07:44:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://albaniarentaltourism.com/details/66a74ab6af7b5a0c17b551ef</loc>
+  <lastmod>2024-08-01T07:44:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://albaniarentaltourism.com/details/66a74a15af7b5a0c17b551e3</loc>
+  <lastmod>2024-08-01T07:44:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://albaniarentaltourism.com/details/66a7494c9a44e8176e972b46</loc>
+  <lastmod>2024-08-01T07:44:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://albaniarentaltourism.com/details/66a744e59a44e8176e972b1f</loc>
+  <lastmod>2024-08-01T07:44:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://albaniarentaltourism.com/details/66a74212ca6f3e1f2d10fe7a</loc>
+  <lastmod>2024-08-01T07:44:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://albaniarentaltourism.com/register</loc>
+  <lastmod>2024-08-01T07:44:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
 </urlset>
