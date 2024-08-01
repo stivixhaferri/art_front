@@ -24,7 +24,7 @@ export const metadata = {
     description: "Një platformë inovative për qira makinash në Shqipëri. Rezervoni dhe paguani lehtësisht për makinat që përshtaten me nevojat tuaja dhe shijoni udhëtime të paharrueshme.",
     
   },
-  favicon: "/favicon.ico" 
+  favicon: "https://albaniarentaltourism.com/favicon.ico" 
 };
 export default function RootLayout({ children }) {
 
