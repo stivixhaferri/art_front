@@ -24,7 +24,7 @@ export const metadata = {
     description: "Një platformë inovative për qira makinash në Shqipëri. Rezervoni dhe paguani lehtësisht për makinat që përshtaten me nevojat tuaja dhe shijoni udhëtime të paharrueshme.",
     
   },
-  favicon: "logo.png" // Make sure to replace this with the actual path to your favicon file
+  favicon: "./logo.png" 
 };
 export default function RootLayout({ children }) {
 
