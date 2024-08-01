@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
         <div className="pt-[8%] bg-[#F7F7F7]  min-h-[90vh]">{children}</div>
         <Bottom/>
         <Toaster />
-        <script src="https://www.paypal.com/sdk/js?client-id=AfCInsOnrpTadlWPOtzELzC64q3LjatLz7A7Yn20bzsQzwuyA8aoqucr7KnxREeVrQ5YKrx-bb0TgTsM" async></script>
+        <script src="https://www.paypal.com/sdk/js?client-id=AdKRuXSwJ0gtDgfCPadQR2fI9DaCJM6xJBDPmazhchJQa3DMHUdZ3K2L4FbhdRyLaRiCR44878tjvLIc" async></script>
         <script src="https://static.pokpay.io/public/dist/pokpayments/pok-payment.js" async></script>
         </body>
     </html>
