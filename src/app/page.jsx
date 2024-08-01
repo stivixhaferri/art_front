@@ -83,3 +83,21 @@ const getData = async () => {
     return []
   }
 }
+
+
+
+export const metadata = {
+  title: 'Albania Rental Tourism | ART',
+  description: 'Albania Rental Tourism (ART) is a platform where car owners can list their cars for free and clients can book cars by paying only 10% of the booking amount. Discover and book cars effortlessly in Albania!',
+  keywords: 'Albania, car rental, tourism, booking, ART, Albania Rental Tourism',
+  robots: 'index, follow',
+  openGraph: {
+    title: 'Albania Rental Tourism | ART',
+    description: 'Albania Rental Tourism (ART) is a platform where car owners can list their cars for free and clients can book cars by paying only 10% of the booking amount. Discover and book cars effortlessly in Albania!',
+    url: 'https://albaniarentaltourism.com/',
+    image: '/path-to-your-image.jpg',
+    type: 'website',
+    site_name: 'Albania Rental Tourism',
+  },
+  canonical: 'https://albaniarentaltourism.com/',
+};
