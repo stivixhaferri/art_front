@@ -95,7 +95,6 @@ export const metadata = {
     title: 'Albania Rental Tourism | ART',
     description: 'Albania Rental Tourism (ART) is a platform where car owners can list their cars for free and clients can book cars by paying only 10% of the booking amount. Discover and book cars effortlessly in Albania!',
     url: 'https://albaniarentaltourism.com/',
-    image: '/path-to-your-image.jpg',
     type: 'website',
     site_name: 'Albania Rental Tourism',
   },
