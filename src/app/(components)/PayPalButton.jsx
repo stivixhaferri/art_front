@@ -1,5 +1,6 @@
 'use client'
 import React, { useEffect, useRef } from 'react';
+import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 
 const PayPalButton = ({ onSuccess, total}) => {
   const paypalRef = useRef();
@@ -11,7 +12,7 @@ const PayPalButton = ({ onSuccess, total}) => {
           return actions.order.create({
             purchase_units: [{
               amount: {
-                value: `0.2` 
+                value: `${total * 0.10}` 
               }
             }]
           });
