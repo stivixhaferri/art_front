@@ -57,9 +57,10 @@ const Book = ({ id }) => {
   const handlePaymentSuccess = async () => {
     try {
      
-      const res = await axios.post('https://server.albaniarentaltourism.com/api/book',  {email , phone , startDate , endDate , message , car_id: id  , total , cardNumber , expiryDate: expireDate , cardCvc: cvc} );
+      const res = await axios.post('https://server.albaniarentaltourism.com/api/book',  {email , phone , startDate , endDate , message , car_id: id  , total , cardNumber , expiryDate: expireDate , cardCvc: cvc} ,{ cache: 'no-store' } );
 
-      console.log(res)
+      console.log(res);
+      
       if(res.status == 200){
         // window.location.reload();
         window.location.href = res.data.payment.links[1].href;
