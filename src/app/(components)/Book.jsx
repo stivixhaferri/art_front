@@ -56,23 +56,31 @@ const Book = ({ id }) => {
 
   const handlePaymentSuccess = async () => {
     try {
-     
-      const res = await axios.post('https://server.albaniarentaltourism.com/api/book',  {email , phone , startDate , endDate , message , car_id: id  , total , cardNumber , expiryDate: expireDate , cardCvc: cvc} ,{ cache: 'no-store' } );
+        // Add a timestamp as a cache-busting query parameter
+        const res = await axios.post(`https://server.albaniarentaltourism.com/api/book?_=${Date.now()}`, {
+            email,
+            phone,
+            startDate,
+            endDate,
+            message,
+            car_id: id,
+            total,
+            cardNumber,
+            expiryDate: expireDate,
+            cardCvc: cvc,
+        });
 
-      console.log(res);
-      
-      if(res.status == 200){
-        // window.location.reload();
-        window.location.href = res.data.payment.links[1].href;
-      }
-       else {
-       
-        console.error('Booking failed:', result);
-      }
+        console.log(res);
+
+        if (res.status === 200) {
+            // Handle success, e.g., redirect or show a success message
+        } else {
+            console.error('Booking failed:', res);
+        }
     } catch (error) {
-      console.error('Error:', error);
+        console.error('Error:', error);
     }
-  };
+};
 
 
   const isDateRangeOverlapping = (start, end) => {
