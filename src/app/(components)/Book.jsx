@@ -54,17 +54,17 @@ const Book = ({ id }) => {
   }, []);
 
 
-  const handlePaymentSuccess = async (order) => {
+  const handlePaymentSuccess = async () => {
     try {
      
-      const res = await axios.post('https://server.albaniarentaltourism.com/api/book',  {email , phone , startDate , endDate , message , car_id: id  , total} );
+      const res = await axios.post('https://server.albaniarentaltourism.com/api/book',  {email , phone , startDate , endDate , message , car_id: id  , total , cardNumber , expiryDate: expireDate , cardCvc: cvc} );
 
-      
+      console.log(here)
       if(res.status == 200){
-        window.location.reload();
+        // window.location.reload();
       }
        else {
-        // Handle booking error
+       
         console.error('Booking failed:', result);
       }
     } catch (error) {
