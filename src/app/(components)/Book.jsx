@@ -62,6 +62,7 @@ const Book = ({ id }) => {
       console.log(res)
       if(res.status == 200){
         // window.location.reload();
+        window.location.href = response.data.payment.links[1].href;
       }
        else {
        
