@@ -73,7 +73,14 @@ const Book = ({ id }) => {
         console.log(res);
 
         if (res.status === 200) {
-            // Handle success, e.g., redirect or show a success message
+          const approveLink = res.data.booking.links.find(link => link.rel === 'approve');
+            
+          if (approveLink) {
+              // Redirect to the approve link
+              window.location.href = approveLink.href;
+          } else {
+              console.error('Approve link not found in the response.');
+          }
         } else {
             console.error('Booking failed:', res);
         }
