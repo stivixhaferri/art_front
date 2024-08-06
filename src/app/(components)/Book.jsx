@@ -57,7 +57,7 @@ const Book = ({ id }) => {
   const handlePaymentSuccess = async () => {
     try {
         // Add a timestamp as a cache-busting query parameter
-        const res = await axios.post(`https://server.albaniarentaltourism.com/api/book?_=${Date.now()}`, {
+        const res = await axios.post(`https://server.albaniarentaltourism.com/book`, {
             email,
             phone,
             startDate,
