@@ -27,7 +27,7 @@ const Book = ({ id }) => {
   const [isDateRangeValid, setIsDateRangeValid] = useState(true);
   const [cardNumber , setCardNumber] = useState('');
   const [expireDate , setExpireDate] = useState('');
-  const [cvc , setCvx] = useState('')
+  const [cvc , setCvc] = useState('')
 
   const [showPayPalButton, setShowPayPalButton] = useState(false);
 
@@ -169,6 +169,24 @@ const Book = ({ id }) => {
             Total
           </label>
           <input value={total} readOnly className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="total" type="tel" />
+        </div>
+        <div className="mb-4">
+          <label className="block text-gray-700 font-bold mb-2" htmlFor="total">
+            Card Number
+          </label>
+          <input value={cardNumber} onChange={(e) => setCardNumber(e.target.value)}  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="total" type="text" />
+        </div>
+        <div className="mb-4">
+          <label className="block text-gray-700 font-bold mb-2" htmlFor="total">
+            Expiry Date
+          </label>
+          <input placeholder='06/28' value={expireDate} onChange={(e) => setExpireDate(e.target.value)}  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="total" type="text" />
+        </div>
+        <div className="mb-4">
+          <label className="block text-gray-700 font-bold mb-2" htmlFor="total">
+            CVC
+          </label>
+          <input placeholder='411' value={cvc} onChange={(e) => setCvc(e.target.value)}  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="total" type="text" />
         </div>
         <div className="mb-4">
           <label className="block text-gray-700 font-bold mb-2" htmlFor="message">
