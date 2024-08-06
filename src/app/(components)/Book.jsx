@@ -59,7 +59,7 @@ const Book = ({ id }) => {
      
       const res = await axios.post('https://server.albaniarentaltourism.com/api/book',  {email , phone , startDate , endDate , message , car_id: id  , total , cardNumber , expiryDate: expireDate , cardCvc: cvc} );
 
-      console.log(res.data)
+      console.log(res)
       if(res.status == 200){
         // window.location.reload();
       }
