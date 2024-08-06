@@ -186,7 +186,7 @@ const Book = ({ id }) => {
         </div>
        
         <div className="flex items-center justify-center mb-4">
-              <div className={`w-full py-2 text-[10px] px-4 rounded text-white focus:outline-none focus:shadow-outline ${isDateRangeValid ? 'bg-red-600 hover:bg-red-800' : 'bg-gray-400 cursor-not-allowed'}`}>
+              <div className={`w-full py-2 text-[10px] px-4 rounded text-white focus:outline-none focus:shadow-outline flex items-center text-center justify-center ${isDateRangeValid ? 'bg-red-600 hover:bg-red-800 flex items-center text-center justify-center' : 'flex items-center text-center justify-center bg-gray-400 cursor-not-allowed'}`}>
                 Book Appointment
               </div>
         </div>
