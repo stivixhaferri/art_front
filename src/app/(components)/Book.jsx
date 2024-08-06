@@ -25,6 +25,9 @@ const Book = ({ id }) => {
   const [total, setTotal] = useState(0);
   const [message, setMessage] = useState('');
   const [isDateRangeValid, setIsDateRangeValid] = useState(true);
+  const [cardNumber , setCardNumber] = useState('');
+  const [expireDate , setExpireDate] = useState('');
+  const [cvc , setCvx] = useState('')
 
   const [showPayPalButton, setShowPayPalButton] = useState(false);
 
@@ -183,27 +186,9 @@ const Book = ({ id }) => {
         </div>
        
         <div className="flex items-center justify-center mb-4">
-          <AlertDialog>
-            <AlertDialogTrigger disabled={!isDateRangeValid}>
               <div className={`w-full py-2 text-[10px] px-4 rounded text-white focus:outline-none focus:shadow-outline ${isDateRangeValid ? 'bg-red-600 hover:bg-red-800' : 'bg-gray-400 cursor-not-allowed'}`}>
                 Book Appointment
               </div>
-            </AlertDialogTrigger>
-            {isDateRangeValid && (
-              <AlertDialogContent className="lg:w-[30%] w-[90%] max-h-[80%]  overflow-y-auto">
-                <AlertDialogHeader>
-                  <AlertDialogTitle>Pay For Reservation</AlertDialogTitle>
-                  <AlertDialogDescription>
-                    <PayPalButton total={total} onSuccess={handlePaymentSuccess} />
-                    {/* <Pok/> */}
-                  </AlertDialogDescription>
-                </AlertDialogHeader>
-                <AlertDialogFooter>
-                  <AlertDialogCancel>Cancel</AlertDialogCancel>
-                </AlertDialogFooter>
-              </AlertDialogContent>
-            )}
-          </AlertDialog>
         </div>
        
       </form>
